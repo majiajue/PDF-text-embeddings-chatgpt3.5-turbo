@@ -1,0 +1,1 @@
+# Pdf-text-embeddings-chatgpt3.5-turbo
