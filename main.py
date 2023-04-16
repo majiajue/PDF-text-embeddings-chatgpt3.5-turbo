@@ -36,7 +36,7 @@ def answer_question(message_log):
 
 
 
-st.set_page_config(page_title="PDF to DataFrame")
+st.set_page_config(page_title="PDF Text Embeddings")
 
 pdf_file = st.file_uploader("Load your PDF", type="pdf")
 hide="""
@@ -76,7 +76,7 @@ def get_text():
     return input_text
 with st.form('form',clear_on_submit=True):
     user_input=get_text()
-    submitted=st.form_submit_button('Demander')
+    submitted=st.form_submit_button('ASK')
 if submitted :
     #st.write(get_embedding(user_input, model='text-embedding-ada-002'))
     question_embedding=get_embedding(user_input, model='text-embedding-ada-002')
